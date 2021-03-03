@@ -1,0 +1,60 @@
+/*------------------- Fonts --------------------------*/
+$h1:'Playfair Display',
+sans-serif;
+$h2:'Gilroy',
+sans-serif;
+$text:'Gilroy',
+sans-serif;
+$link:'Gilroy',
+sans-serif;
+
+/*------------------- Responsive --------------------------*/
+$xl:'only screen and (max-width: 1600px)';
+$lg:'only screen and (max-width: 1200px)';
+$md:'only screen and (max-width: 992px)';
+$sm:'only screen and (max-width: 767px)';
+$xs:'only screen and (max-width:480px)';
+
+.container {
+    width: 1299px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+h1 {
+    font-family: $h1;
+    font-size: 40px;
+    letter-spacing: 0.2px;
+}
+
+h2 {
+    font-family: $h2;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FF9900;
+    text-transform: uppercase;
+    letter-spacing: 9.7px;
+}
+h4 {
+    font-family: $h1;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 40px;
+}
+
+p {
+    font-family: $text;
+    font-size: 18px;
+    line-height: 25.09px;
+    letter-spacing: 0.2px;
+}
+
+a {
+    font-family: $link;
+    font-size: 18px;
+    color: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+}

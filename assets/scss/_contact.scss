@@ -1,0 +1,105 @@
+.contact {
+    background: #FFB800;
+    padding-top: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .container {
+        margin: 0;
+        width: 725px;
+        padding: 0 10px;
+        color: #fff;
+        margin-left: 34px;
+
+        @media #{$lg} {
+            margin: 0;
+        }
+    }
+
+    h4 {
+        margin-bottom: 7px;
+    }
+
+    p {
+        margin-bottom: 45px;
+        letter-spacing: 0.005em;
+        line-height: 21px;
+    }
+
+    form {
+        margin-left: 0px;
+
+        input,
+        textarea {
+            padding-bottom: 3px;
+            border: none;
+            outline: none;
+            color: inherit;
+            background: transparent;
+            border-bottom: 1px solid #fff;
+            resize: none;
+            margin-bottom: 42px;
+            width: 293px;
+            max-width: 45%;
+
+            &::placeholder {
+                color: inherit;
+                font-family: $text;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 18.83px;
+                letter-spacing: 0.07em;
+            }
+        }
+
+        textarea {
+            width: 100%;
+            max-width: 100%;
+            height: 26px;
+            margin-bottom: 39px;
+        }
+
+        button {
+            border: none;
+            outline: none;
+            background-color: #fff;
+            padding: 12px 26px;
+            color: #FFB800;
+            margin-bottom: 40px;
+            font-family: $text;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            margin-left: -2px;
+            margin-top: -1px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    @media #{$sm} {
+        h4, p {
+            text-align: center;
+        }
+        form {
+            margin-left: 0px;
+            text-align: center;
+            .row {
+               flex-direction: column;
+               input{
+                   width: 100%;
+               }
+            }
+            input,
+            textarea {
+               max-width: 100%;
+            }
+            button {
+               width: 100%;
+            } 
+        }
+    }
+}

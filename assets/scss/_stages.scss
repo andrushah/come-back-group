@@ -1,0 +1,210 @@
+.work-stages {
+    background: #000;
+    padding-top: 71px;
+    padding-bottom: 126px;
+
+    .container {
+        width: 1124px;
+
+        h1 {
+            color: #fff;
+            margin-bottom: 98px;
+
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+        @media #{$md} {
+            h1,h2{
+                text-align: center;
+            }
+        }
+    }
+
+
+    .stage {
+        color: #fff;
+        position: relative;
+        width: 100%;
+
+        .wr {
+            padding-left: 31px;
+            padding-right: 80px;
+            position: absolute;
+            left: 0;
+            top: 37px;
+            z-index: 0;
+            width: 100%;
+            @media #{$md} {
+                display: none;
+            }
+            .line {
+                height: 2px;
+                background: #fff;
+            }
+
+        }
+
+
+        &-list {
+            display: flex;
+            align-items: flex-start;
+            // justify-content: space-between;
+            justify-content: flex-start;
+            padding-left: 19px;
+
+            li {
+                display: flex;
+                flex-flow: column;
+                align-items: flex-start;
+                color: #fff;
+
+                @media #{$lg} {}
+
+                .box {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 24px;
+                    padding-left: 5px;
+
+                    svg {
+                        position: relative;
+                        display: flex;
+                        text-align: center;
+                        align-items: center;
+
+                        .track {
+                            stroke-width: 1;
+                            stroke: #fff;
+                            fill: none;
+                        }
+
+                        .progress {
+                            stroke-width: 5;
+                            stroke: #FFB800;
+                            stroke-linecap: round;
+                            fill: none;
+                            transform: rotate(270deg);
+                            transform-origin: center;
+                            fill: #000;
+                            transition: stroke-dashoffset 0.5s;
+                        }
+                    }
+
+                    .number {
+                        position: absolute;
+                        top: 44%;
+                        left: 53%;
+                        transform: translate(-50%, -50%);
+                        font-size: 40px;
+                        font-family: $h1;
+                    }
+                }
+
+                p {
+                    font-family: $text;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.22px;
+
+                }
+
+                &:nth-child(2) {
+                    margin-left: 86px;
+
+                    .box {
+                        margin-left: -9px;
+                        margin-top: 3px;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                &:nth-child(3) {
+                    margin-left: 44px;
+                    margin-top: 1px;
+
+                    .box {
+                        margin-left: -10px;
+                    }
+                }
+
+                &:nth-child(4) {
+                    margin-left: 46px;
+                    margin-top: 2px;
+
+                    .box {
+                        margin-left: -10px;
+                    }
+                }
+
+                &:nth-child(5) {
+                    margin-left: 52px;
+                    margin-top: 2px;
+
+                    .box {
+                        margin-left: -10px;
+                    }
+                }
+
+                &:nth-child(6) {
+                    align-items: center;
+                    margin-left: 63px;
+                    margin-top: 2px;
+
+                    .box {
+                        margin-left: -10px;
+                    }
+                }
+
+            }
+
+            @media #{$lg} {
+                justify-content: space-between;
+
+                li {
+
+                    &:nth-child(odd),
+                    &:nth-child(even) {
+                        margin: 0;
+
+                        .box {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            @media #{$md} {
+                flex-wrap: wrap;
+                justify-content: center;
+                padding-left: 0;
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 30%;
+                    text-align: center;
+                    &:nth-child(odd),
+                    &:nth-child(even) {
+                        margin-bottom: 40px;
+                        .box {
+                          margin-bottom: 20px;
+                        }
+                    }
+                    
+                }
+            }
+            @media #{$sm} {
+                li{
+                    width: 50%;
+                }
+            }
+        }
+
+       
+    }
+
+
+}

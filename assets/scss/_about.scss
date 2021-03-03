@@ -1,0 +1,111 @@
+.about {
+    display: flex;
+    width: 100%;
+
+    .left-side {
+        width: 37.7%;
+        background: #ccc;
+        background: url('../img/desktop/about-left-side.jpg') no-repeat center;
+        background-size: cover;
+        min-height: 765px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        color: #fff;
+        
+        .experience {
+            width: 238px;
+            height: 220px;
+            background: #FFB800;
+            display: flex;
+            flex-flow: column;
+            padding-top: 28px;
+            padding-left: 35px;
+            justify-content: flex-start;
+            span{
+                font-size: 70px ;
+                font-family: $h1;
+                font-weight: 400;
+                margin-bottom: 8px;
+            }
+            p{
+                font-size: 30px;
+                line-height: 41.82px;
+                letter-spacing: 0.2px;
+            }
+        }
+        
+    }
+
+    .right-side {
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 20px;
+        background:url('../img/desktop/about-right-side.jpg') no-repeat 240px 360px;
+        background-size: 100%;
+        padding-top: 152px;
+        padding-left: 42px;
+        .description {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 542px;
+            
+            h2 {
+                margin-bottom: 20px;
+                
+            }
+
+            h1 {
+                margin-bottom: 35px;
+            }
+
+            p {
+               color:#7C7C7C;
+               line-height: 25.09px;
+               letter-spacing: 0.2px;
+               margin-bottom: 24px;
+            }
+        }
+    }
+    @media #{$md} {
+            .left-side{
+                width: 45%;
+                
+            }
+            .right-side{
+                padding: 70px 20px 40px;
+                width: 55%;
+                .description{
+                    width: 100%;
+                    h1,h2{
+                        text-align: center;
+                    }
+                }
+            }
+            
+    }
+    @media #{$sm} {
+        flex-direction: column;
+        .left-side{
+            width: 100%;
+            min-height: auto;
+            order: 2;
+            background-position: -89px 50%;
+            .experience{
+                width: 200px;
+            }
+        }
+        .right-side{
+            order:1;
+            width: 100%;
+            .description{
+                width: 100%;
+            }
+        }
+        
+}
+
+}
